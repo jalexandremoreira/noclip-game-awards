@@ -1,12 +1,11 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
-import { Box, Typography } from '@mui/material';
 
+import Divider from '@/components/Divider';
 import useAppDimensions from '@/hooks/useAppDimensions';
+import List23 from '@/components/lists/2023';
 
 export default function Home() {
   const {
@@ -33,9 +32,9 @@ export default function Home() {
         paddingX={paddingXDesktop}
         width="100%"
       >
-        <Stack width="100%" direction="row" gap="50px">
-          <Typography color="#fff">hello</Typography>
-        </Stack>
+        <Divider>2023</Divider>
+
+        <List23 />
       </Stack>
     </Stack>
   );

@@ -45,7 +45,7 @@ export default function NavbarDesktop() {
           <Stack
             direction="row"
             height="100%"
-            spacing="10px"
+            spacing="3px"
             alignItems="center"
           >
             <Image
