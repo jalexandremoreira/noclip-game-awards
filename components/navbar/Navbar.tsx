@@ -57,7 +57,7 @@ export default function NavbarDesktop() {
             />
 
             <Typography color="white" fontSize="28px">
-              podcast - game awards
+              game awards
             </Typography>
           </Stack>
 

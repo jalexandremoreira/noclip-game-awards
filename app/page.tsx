@@ -28,7 +28,7 @@ export default function Home() {
         gap="50px"
         height="100%"
         maxWidth={maxWidthDesktop}
-        paddingTop={paddingTopDesktop}
+        // paddingTop={paddingTopDesktop}
         paddingX={paddingXDesktop}
         width="100%"
       >
