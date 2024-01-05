@@ -1,4 +1,5 @@
 'use client';
+
 import Stack from '@mui/material/Stack';
 import { Pragati_Narrow } from 'next/font/google';
 
