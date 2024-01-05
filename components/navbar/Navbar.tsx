@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography, Link } from '@mui/material';
 import Image from 'next/image';
 
 import useAppDimensions from '@/hooks/useAppDimensions';

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Typography } from '@mui/material';
-import Link from 'next/link';
+import { Typography, Link } from '@mui/material';
 
 export default function Honorable({
   list,

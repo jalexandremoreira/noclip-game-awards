@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { Stack, Typography } from '@mui/material';
+import { Stack, Typography, Link } from '@mui/material';
 
 export default function NavbarDesktop() {
   const link = {
