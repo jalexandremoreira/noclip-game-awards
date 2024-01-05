@@ -87,7 +87,7 @@ export default function Home() {
 
         <Divider>2022</Divider>
 
-        {/* <List22 /> */}
+        <List22 />
 
         <FooterDesktop />
       </Stack>
