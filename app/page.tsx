@@ -79,15 +79,15 @@ export default function Home() {
         width="100%"
         paddingBottom="50px"
       >
-        {/* <Divider>2023</Divider>
+        <Divider>2023</Divider>
 
-        <List23 />
+        {/* <List23 /> */}
 
         {honorable2023 && <Honorable list={honorable2023} />}
 
         <Divider>2022</Divider>
 
-        <List22 /> */}
+        {/* <List22 /> */}
 
         <FooterDesktop />
       </Stack>
