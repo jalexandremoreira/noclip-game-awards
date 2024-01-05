@@ -89,7 +89,7 @@ export default function List() {
           award: 'best dreamcast game 👍',
           game: 'Bomb Rush Cyberfunk',
           comment:
-            '(liberty taken to replace the thumbs up emoji with a smiley face as was discussed in the episode)',
+            '(I took the liberty of replacing the thumbs up emoji with a smiley face as was discussed in the episode)',
           logo: <Bombrush size={175} />,
           links: [
             'https://store.steampowered.com/app/1353230/Bomb_Rush_Cyberfunk/',

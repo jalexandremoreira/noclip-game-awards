@@ -4,19 +4,20 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 
 import Divider from '@/components/Divider';
-import useAppDimensions from '@/hooks/useAppDimensions';
-import List23 from '@/components/lists/2023';
-import List22 from '@/components/lists/2022';
+import FooterDesktop from '@/components/footer/Desktop';
 import Honorable from '@/components/lists/Honorable';
+import List22 from '@/components/lists/2022';
+import List23 from '@/components/lists/2023';
+import useAppDimensions from '@/hooks/useAppDimensions';
 
 export default function Home() {
   const {
-    isMobile,
+    // isMobile,
     maxWidthDesktop,
     paddingTopDesktop,
-    paddingTopMobile,
+    // paddingTopMobile,
     paddingXDesktop,
-    paddingXMobile,
+    // paddingXMobile,
   } = useAppDimensions();
 
   React.useEffect(() => {
@@ -87,6 +88,8 @@ export default function Home() {
         <Divider>2022</Divider>
 
         <List22 />
+
+        <FooterDesktop />
       </Stack>
     </Stack>
   );

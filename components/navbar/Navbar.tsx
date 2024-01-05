@@ -71,7 +71,7 @@ export default function NavbarDesktop() {
                 '&:hover': { opacity: '80%' },
               }}
             >
-              listen here
+              listen to the pod here
             </Typography>
           </Link>
         </Stack>
