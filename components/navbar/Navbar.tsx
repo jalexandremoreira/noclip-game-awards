@@ -65,7 +65,11 @@ export default function NavbarDesktop() {
             <Typography
               color="primary.main"
               fontSize="20px"
-              sx={{ textDecoration: 'underline' }}
+              fontWeight="bold"
+              sx={{
+                transition: 'opacity 0.2s ease',
+                '&:hover': { opacity: '80%' },
+              }}
             >
               listen here
             </Typography>

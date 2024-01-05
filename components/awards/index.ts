@@ -6,6 +6,9 @@ import { HomeBody } from './2023/HomeBody';
 import { Blasph } from './2023/Blasph';
 import { Bombrush } from './2023/Bombrush';
 import { Dave } from './2023/Dave';
+import { BG3 } from './2023/BG3';
+import { Midnight } from './2023/Midnight';
+import { AlanWake } from './2023/AlanWake';
 
 const awards = {
   SlayersX,
@@ -16,6 +19,9 @@ const awards = {
   Blasph,
   Bombrush,
   Dave,
+  BG3,
+  Midnight,
+  AlanWake,
 };
 
 export default awards;

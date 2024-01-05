@@ -20,7 +20,7 @@ export default function useAppDimensions() {
 
   const marginBottom = isMobile ? '50px' : '80px';
   const maxWidthDesktop = '1400px';
-  const paddingTopDesktop = '100px';
+  const paddingTopDesktop = '80px';
   const paddingTopMobile = '60px';
   const paddingXMobile = '20px';
   const paddingXDesktop = width > 1199 ? '130px' : '5vw';

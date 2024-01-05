@@ -8,18 +8,39 @@ interface Props {
   children: React.ReactNode;
   game: string;
   links?: string[];
+  comment: string | null;
 }
 
-export default function ListItem({ children, game, award, links }: Props) {
+export default function ListItem({
+  children,
+  game,
+  award,
+  links,
+  comment,
+}: Props) {
   const iconSize = 30;
 
   return (
-    <Stack direction="row" gap="40px" alignItems="center">
+    <Stack direction="row" gap="60px" alignItems="center">
       {children && children}
 
       <Stack flex={1} gap="10px">
         <Typography color="#fff" fontSize="22px">
-          &quot;{award}&quot;&nbsp;awarded to&nbsp;{game}
+          <Typography
+            color="#fff"
+            fontSize="22px"
+            display="inline"
+            fontStyle="italic"
+            component="span"
+          >
+            {award}
+          </Typography>
+          &nbsp;awarded to&nbsp;{game}
+          {comment && (
+            <Typography color="#fff" fontSize="16px">
+              &nbsp;{comment}
+            </Typography>
+          )}
         </Typography>
 
         {links && (
