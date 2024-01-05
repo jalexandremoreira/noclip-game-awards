@@ -12,7 +12,7 @@ export default function List() {
     Pentiment,
     Immortality,
     NW,
-    // Citizen,
+    Citizen,
     // Signalis,
     // WeirdWest,
     // Lamb,
@@ -101,17 +101,17 @@ export default function List() {
             'https://neonwhite.rip/',
           ],
         },
-        // {
-        //   award: 'Narrative Sashimi',
-        //   game: 'Citizen Sleeper',
-        //   comment: null,
-        //   logo: <Citizen size={175} />,
-        //   links: [
-        //     'https://store.steampowered.com/app/1578650/Citizen_Sleeper/',
-        //     'https://twitter.com/jumpovertheage?lang=en',
-        //     'https://www.fellowtraveller.games/citizen-sleeper',
-        //   ],
-        // },
+        {
+          award: 'Narrative Sashimi',
+          game: 'Citizen Sleeper',
+          comment: null,
+          logo: <Citizen size={175} />,
+          links: [
+            'https://store.steampowered.com/app/1578650/Citizen_Sleeper/',
+            'https://twitter.com/jumpovertheage?lang=en',
+            'https://www.fellowtraveller.games/citizen-sleeper',
+          ],
+        },
         // {
         //   award: 'Survival Horror Homecoming',
         //   game: 'SIGNALIS',
