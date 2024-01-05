@@ -1,14 +1,12 @@
 'use client';
 import Stack from '@mui/material/Stack';
 import { Pragati_Narrow } from 'next/font/google';
-import { usePathname } from 'next/navigation';
 
 import './globals.css';
 import Navbar from '@/components/navbar/Navbar';
 import ThemeRegistry from '@/theme/ThemeRegistry';
-import theme from '@/theme';
 
-export const pragati = Pragati_Narrow({
+const pragati = Pragati_Narrow({
   subsets: ['latin-ext'],
   variable: '--font-sintony',
   weight: ['400', '700'],
@@ -19,8 +17,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
-
   return (
     <html lang="en">
       <body
