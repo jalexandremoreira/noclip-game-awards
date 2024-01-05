@@ -81,7 +81,7 @@ export default function Home() {
       >
         <Divider>2023</Divider>
 
-        {/* <List23 /> */}
+        <List23 />
 
         {honorable2023 && <Honorable list={honorable2023} />}
 
