@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import ListItem from '@/components/ListItem';
 import awards from '@/components/awards';
@@ -167,17 +168,25 @@ export default function List() {
             'https://poncle.games/',
           ],
         },
-        // {
-        //   award: 'Impossible Comeback',
-        //   game: 'Return to Monkey Island',
-        //   comment: null,
-        //   logo: <MonkeyIsland size={175} />,
-        //   links: [
-        //     'https://store.steampowered.com/app/2060130/Return_to_Monkey_Island/',
-        //     'https://twitter.com/terribletoybox',
-        //     'https://returntomonkeyisland.com/',
-        //   ],
-        // },
+        {
+          award: 'Impossible Comeback',
+          game: 'Return to Monkey Island',
+          comment: null,
+          logo: (
+            <Image
+              alt="noclip"
+              height={59.26}
+              priority
+              src="/impossible-comeback.png"
+              width={175}
+            />
+          ),
+          links: [
+            'https://store.steampowered.com/app/2060130/Return_to_Monkey_Island/',
+            'https://twitter.com/terribletoybox',
+            'https://returntomonkeyisland.com/',
+          ],
+        },
       ].map(({ award, game, logo, links, comment }, index) => (
         <ListItem
           key={index}
