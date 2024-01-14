@@ -4,7 +4,11 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 import { Box, Typography } from '@mui/material';
 
+import useAppDimensions from '@/hooks/useAppDimensions';
+
 export default function Divider({ children }: { children?: string }) {
+  const { isMobile } = useAppDimensions();
+
   return (
     <Stack width="100%" direction="row" gap="20px">
       <Stack direction="row" gap="3px" alignItems="center" width="100%">
@@ -18,7 +22,7 @@ export default function Divider({ children }: { children?: string }) {
           height="1px"
         />
       </Stack>
-      <Typography color="#fff" fontSize="35px">
+      <Typography color="#fff" fontSize={isMobile ? '26px' : '35px'}>
         {children}
       </Typography>
       <Stack direction="row" gap="3px" alignItems="center" width="100%">

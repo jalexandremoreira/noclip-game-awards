@@ -1,13 +1,19 @@
 import React from 'react';
 import { Typography, Link } from '@mui/material';
 
+import useAppDimensions from '@/hooks/useAppDimensions';
+
 export default function Honorable({
   list,
 }: {
   list: { title: string; link: string }[];
 }) {
+  const { isMobile } = useAppDimensions();
+
+  const fontSize = isMobile ? '18px' : '22px';
+
   return (
-    <Typography color="#fff" fontSize="22px">
+    <Typography color="#fff" fontSize={fontSize}>
       Honorable mentions:&nbsp;
       {list.map(({ title, link }, index) => (
         <Typography key={index} display="inline" component="span">
@@ -15,7 +21,7 @@ export default function Honorable({
             color="primary.main"
             component="span"
             display="inline"
-            fontSize="22px"
+            fontSize={fontSize}
             fontWeight="bold"
             sx={{
               transition: 'opacity 0.2s ease',
@@ -31,7 +37,7 @@ export default function Honorable({
                 color="#fff"
                 component="span"
                 display="inline"
-                fontSize="22px"
+                fontSize={fontSize}
               >
                 ,&nbsp;
               </Typography>
