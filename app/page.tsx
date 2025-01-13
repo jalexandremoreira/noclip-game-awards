@@ -6,11 +6,13 @@ import Stack from '@mui/material/Stack';
 import Divider from '@/components/Divider';
 import FooterDesktop from '@/components/footer/Desktop';
 import FooterMobile from '@/components/footer/Mobile';
-import Honorable from '@/components/lists/Honorable';
+import Honorable from '@/components/Honorable';
 import List22 from '@/components/lists/2022';
 import List23 from '@/components/lists/2023';
+import List24 from '@/components/lists/2024';
 import useAppDimensions from '@/hooks/useAppDimensions';
-import { honorable2023 } from './honorable';
+import { honorable2023 } from '../components/lists/2023/honorable';
+import { honorable2024 } from '@/components/lists/2024/honorable';
 
 export default function Home() {
   const {
@@ -43,6 +45,12 @@ export default function Home() {
           width="100%"
           paddingBottom="50px"
         >
+          <Divider>2024</Divider>
+
+          <List24 />
+
+          {honorable2024 && <Honorable list={honorable2024} />}
+
           <Divider>2023</Divider>
 
           <List23 />
@@ -74,6 +82,12 @@ export default function Home() {
         width="100%"
         paddingBottom="20px"
       >
+        <Divider>2024</Divider>
+
+        <List24 />
+
+        {honorable2024 && <Honorable list={honorable2024} />}
+
         <Divider>2023</Divider>
 
         <List23 />

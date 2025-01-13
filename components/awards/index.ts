@@ -1,3 +1,14 @@
+// 2024
+import { Balatro } from './2024/Balatro';
+import { AstroBot } from './2024/AstroBot';
+import { UFO50 } from './2024/UFO50';
+import { MouthWashing } from './2024/MouthWashing';
+import { Resist } from './2024/Resist';
+import { Lorelei } from './2024/Lorelei';
+import { Anthology } from './2024/Anthology';
+import { Metaphor } from './2024/Metaphor';
+import { Indiana } from './2024/Indiana';
+
 // 2023
 import { SlayersX } from './2023/SlayersX';
 import { REIV } from './2023/REIV';
@@ -10,6 +21,7 @@ import { Dave } from './2023/Dave';
 import { BG3 } from './2023/BG3';
 import { Midnight } from './2023/Midnight';
 import { AlanWake } from './2023/AlanWake';
+
 // 2022
 import { Tunic } from './2022/Tunic';
 import { COD } from './2022/COD';
@@ -27,6 +39,16 @@ import { Vampire } from './2022/Vampire';
 import { MonkeyIsland } from './2022/MonkeyIsland';
 
 const awards = {
+  Balatro,
+  AstroBot,
+  UFO50,
+  MouthWashing,
+  Resist,
+  Lorelei,
+  Anthology,
+  Metaphor,
+  Indiana,
+
   SlayersX,
   REIV,
   FFXVI,
@@ -38,6 +60,7 @@ const awards = {
   BG3,
   Midnight,
   AlanWake,
+
   Tunic,
   COD,
   Horizon,
