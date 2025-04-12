@@ -24,10 +24,13 @@ export default function Home() {
     paddingXMobile,
   } = useAppDimensions();
 
+  const [isOpen, setIsOpen] = React.useState([true, true, true]);
+
   React.useEffect(() => {
     document.title = 'noclip game awards';
   }, []);
 
+  // TODO: create a wrapper that checks for the platform and returns the same child
   if (!isMobile) {
     return (
       <Stack
@@ -45,21 +48,37 @@ export default function Home() {
           width="100%"
           paddingBottom="50px"
         >
-          <Divider>2024</Divider>
+          {/* TODO: create a wrapper that has a contained state */}
+          <Divider
+            isOpen={isOpen[2]}
+            setIsOpen={() => setIsOpen([isOpen[0], isOpen[1], !isOpen[2]])}
+          >
+            2024
+          </Divider>
 
-          <List24 />
+          {isOpen[2] && <List24 />}
 
-          {honorable2024 && <Honorable list={honorable2024} />}
+          {isOpen[2] && honorable2024 && <Honorable list={honorable2024} />}
 
-          <Divider>2023</Divider>
+          <Divider
+            isOpen={isOpen[1]}
+            setIsOpen={() => setIsOpen([isOpen[0], !isOpen[1], isOpen[2]])}
+          >
+            2023
+          </Divider>
 
-          <List23 />
+          {isOpen[1] && <List23 />}
 
-          {honorable2023 && <Honorable list={honorable2023} />}
+          {isOpen[1] && honorable2023 && <Honorable list={honorable2023} />}
 
-          <Divider>2022</Divider>
+          <Divider
+            isOpen={isOpen[0]}
+            setIsOpen={() => setIsOpen([!isOpen[0], isOpen[1], isOpen[2]])}
+          >
+            2022
+          </Divider>
 
-          <List22 />
+          {isOpen[0] && <List22 />}
 
           <FooterDesktop />
         </Stack>
@@ -82,21 +101,36 @@ export default function Home() {
         width="100%"
         paddingBottom="20px"
       >
-        <Divider>2024</Divider>
+        <Divider
+          isOpen={isOpen[2]}
+          setIsOpen={() => setIsOpen([isOpen[0], isOpen[1], !isOpen[2]])}
+        >
+          2024
+        </Divider>
 
-        <List24 />
+        {isOpen[2] && <List24 />}
 
-        {honorable2024 && <Honorable list={honorable2024} />}
+        {isOpen[2] && honorable2024 && <Honorable list={honorable2024} />}
 
-        <Divider>2023</Divider>
+        <Divider
+          isOpen={isOpen[1]}
+          setIsOpen={() => setIsOpen([isOpen[0], !isOpen[1], isOpen[2]])}
+        >
+          2023
+        </Divider>
 
-        <List23 />
+        {isOpen[1] && <List23 />}
 
-        {honorable2023 && <Honorable list={honorable2023} />}
+        {isOpen[1] && honorable2023 && <Honorable list={honorable2023} />}
 
-        <Divider>2022</Divider>
+        <Divider
+          isOpen={isOpen[0]}
+          setIsOpen={() => setIsOpen([!isOpen[0], isOpen[1], isOpen[2]])}
+        >
+          2022
+        </Divider>
 
-        <List22 />
+        {isOpen[0] && <List22 />}
 
         <FooterMobile />
       </Stack>
